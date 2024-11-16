@@ -1,0 +1,8 @@
+
+services:
+  python:
+    image: python:3.13
+    working_dir: /home/TechLabSatoru
+    tty: true
+    volumes:
+      - ./:/home/TechLabSatoru
