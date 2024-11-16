@@ -1,9 +1,11 @@
 name: Deploy the app
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["Test the code"]
+    branches: [ main ]
+    types:
+      - completed
 
 jobs:
   deploy:
