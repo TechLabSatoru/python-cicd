@@ -1,7 +1,9 @@
 
 services:
   python:
-    image: python:3.13
+    build:
+      context: .
+      dockerfile: Dockerfile
     working_dir: /home/TechLabSatoru
     tty: true
     volumes:
